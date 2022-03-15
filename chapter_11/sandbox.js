@@ -57,7 +57,7 @@ logToHTML('dateFns.format(732462363,"dddd, Do, MMMM, YYYY"): ',dateFns.format(tm
 const before_a = new Date('February 1 2019 12:00:00');
 logToHTML('dateFns.distanceInWords(now, before_a, {addSuffix:true}): ',dateFns.distanceInWords(now, before_a, {addSuffix:true}));
 
-const tick = () =>{
+const tick = () => {
     const now = new Date();
     
     const h = now.getHours();
@@ -81,7 +81,7 @@ function logToHTML () {
 
     for (let index = 0; index < arguments.length; index++) {
         if (index === 0){
-            pEl.innerHTML += `<span class="font-bold">${arguments[index]}</span>`    
+            pEl.innerHTML += `<span class="font-bold text-red-400">${arguments[index]}</span>`    
         } else {
             pEl.innerHTML += arguments[index] + " ";
         }
