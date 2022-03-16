@@ -516,8 +516,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -3rem;
 }
 
-.bottom-8{
-  bottom: 2rem;
+.top-6{
+  top: 1.5rem;
 }
 
 .m-auto{
