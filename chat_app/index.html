@@ -13,7 +13,6 @@
     <div class="container my-4">
         <h1 class="my-4 text-center">Yep chat</h1>
     
-
         <!--buttons for chatrooms-->
 
         <div class="chat-rooms mb-3 text-center">
@@ -32,34 +31,46 @@
         <!--new chat form-->
         <form class="new-chat my-3">
             <div class="input-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">Your message:</div>
-                </div>
+                <div class="input-group-text">Your message:</div>
                 <input type="text" id="message" class="form-control" required>
-                <div class="input-group-append">
-                    <input type="submit" class="btn" value="send">
-                </div>
+                <input type="submit" class="btn" value="send">
             </div>
         </form>
 
         <!--update name form-->
         <form class="new-name my-3">
             <div class="input-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">Update name:</div>
-                </div>
-                <input type="text" id="name" class="form-control" required>
-                <div class="input-group-append">
-                    <input type="submit" class="btn" value="update">
-                </div>
+                <div class="input-group-text">Update name:</div>
+                <input type="text" id="name" class="form-control" required>                
+                <input type="submit" class="btn" value="update">
             </div>
             <div class="update-msg"></div>
         </form>
 
     </div>
-гл
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBGMlFhEhfbDTYxMm2bJ61NbOAd8oppEz4",
+          authDomain: "jsplayspace.firebaseapp.com",
+          databaseURL: "https://jsPlayspace.firebaseio.com",
+          projectId: "jsplayspace",
+          storageBucket: "jsplayspace.appspot.com",
+          messagingSenderId: "383116386377",
+          appId: "1:383116386377:web:ba1348a061d4d2f45e5f98"
+        };    
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.9.0/date_fns.js"></script>
     <script src="scripts/chat.js"></script>
-    <script src="scripts/app.js"></script>
     <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+
 </body>
 </html>
