@@ -1,4 +1,4 @@
-node_modules/
+**/node_modules/
 udemy-mjsfntn/
 tailwind.config.js
 package.json
