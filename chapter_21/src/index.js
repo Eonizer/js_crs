@@ -150,7 +150,7 @@ const unsubAuth = onAuthStateChanged(auth, user => {
 });
 
 const unsubButton = document.querySelector('.unsub');
-unsubButton.addEventListener(() => {
+unsubButton.addEventListener('click' ,() => {
     console.log('unsubbing');
     unsubCol();
     unsubDoc();
